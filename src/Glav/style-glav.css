@@ -1,0 +1,241 @@
+* {
+  font-family: "Exo 2", sans-serif;
+}
+
+.image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.image-filter {
+  margin-left: 94px;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0f0129;
+  opacity: 0.6;
+}
+
+.fontwhite-banner-timer {
+  display: flex;
+  background: linear-gradient(to right, #ffffff 50%, #4f0594 50%);
+  width: 700px;
+  height: 350px;
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 800px;
+  box-shadow: 7px 6px 20px 7px rgb(27, 1, 44);
+}
+
+.promo {
+  width: 730px;
+  text-align: center;
+  /* background: linear-gradient(to right, #2e0357 45%, #ffffff 57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  margin: 0 auto;
+  color: black;
+}
+
+.akcia {
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #caa256 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  animation: animated_gradient_text 12s ease-in-out infinite;
+  -moz-animation: animaanimated_gradient_textted_text 12s ease-in-out infinite;
+  -webkit-animation: animated_gradient_text 12s ease-in-out infinite;
+}
+
+@keyframes animated_gradient_text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.aktibutton {
+  background-color: #4f0594;
+  width: 125px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 1px 10px 2px rgba(39, 2, 70, 0.507);
+  border-radius: 10px;
+  border: 2px solid rgba(39, 2, 70, 0.507);
+}
+
+.aktibutton:hover {
+  background-color: #230441;
+}
+
+.linktocorzina-aktibutton {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4px;
+}
+
+.osnovnoyContentGlav {
+  margin-top: 40px;
+}
+
+.textGlav {
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 90%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.list {
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  width: 900px;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+.list h2 {
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.list ul {
+  position: relative;
+}
+.list ul li {
+  position: relative;
+  left: 0;
+  color: #000000;
+  list-style: none;
+  margin: 4px 0;
+  border-left: 3px solid rgb(53, 43, 105);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.list ul li:hover {
+  left: 10px;
+}
+.list ul li span {
+  position: relative;
+  padding: 8px;
+  padding-left: 12px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
+}
+.list ul li:hover span {
+  color: #ffffff;
+}
+.list ul li:before {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 100%;
+  background: rgb(53, 43, 105);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+}
+.list ul li:hover:before {
+  transform: scaleX(1);
+}
+
+.glowing-border {
+  border: 5px solid;
+  border-color: rgb(53, 43, 105) black;
+  box-shadow: 0 0 10px rgb(53, 43, 105), 0 0 20px black;
+  position: relative;
+  z-index: 1;
+}
+
+/* Анимация свечения */
+.glowing-border::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(rgb(53, 43, 105), black) 1;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.7;
+  animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgb(53, 43, 105), 0 0 10px black;
+  }
+  100% {
+    box-shadow: 0 0 20px rgb(53, 43, 105), 0 0 40px black;
+  }
+}
+
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-7 {
+  background-image: linear-gradient(
+    to right,
+    #6253e1,
+    #852d91,
+    #a3a1ff,
+    #f24645
+  );
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}

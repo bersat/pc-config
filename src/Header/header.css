@@ -1,0 +1,208 @@
+.bgheader {
+  font-family: "Exo 2", sans-serif;
+  background: linear-gradient(
+    142deg,
+    rgb(53, 43, 105) 100%,
+    rgb(59, 47, 117) 100%
+  );
+  height: 95px;
+  top: -95px;
+  width: 100%;
+  transition: top 1s ease;
+  z-index: 1000;
+}
+
+.fixed {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+}
+
+.navbarheader {
+  text-align: center;
+  padding-top: 20px;
+  background: linear-gradient(
+    142deg,
+    rgb(72, 169, 233) 0%,
+    rgb(248, 32, 147) 100%
+  );
+  height: 50px;
+}
+.navlink {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.navlink1:hover {
+  color: rgb(243, 147, 230);
+}
+
+.navlink2:hover {
+  color: rgb(121, 174, 243);
+}
+
+.btnheader {
+  border: none;
+  background-color: rgba(240, 248, 255, 0);
+  margin-left: 60px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.btnheader:hover {
+  color: hsl(202, 66%, 45%);
+  font-weight: 700;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  margin-top: 17px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(12vh - 4rem);
+  margin-top: 23px;
+}
+
+.title-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: skew(0, -10deg);
+}
+
+.top-title {
+  order: 1;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.bottom-title {
+  order: 3;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.sweet-title {
+  padding-left: 70px;
+  order: 2;
+  color: #fde9ff;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 5vw, 3rem);
+  line-height: 0.75em;
+  text-align: center;
+  text-shadow: 3px 1px 1px #9b29e7, 2px 2px 1px #165bfb, 4px 2px 1px #9b29e7,
+    3px 3px 1px #165bfb, 5px 3px 1px #9b29e7, 4px 4px 1px #165bfb,
+    6px 4px 1px #9b29e7, 5px 5px 1px #165bfb, 7px 5px 1px #9b29e7,
+    6px 6px 1px #165bfb, 8px 6px 1px #9b29e7, 7px 7px 1px #165bfb,
+    9px 7px 1px #9b29e7;
+
+  span {
+    display: block;
+    position: relative;
+
+    &:before {
+      content: attr(data-text);
+      position: absolute;
+      text-shadow: 2px 2px 1px #178da1, -1px -1px 1px #1a819b,
+        -2px 2px 1px #1387b4, 1px -1px 1px #1764ac;
+      z-index: 1;
+    }
+
+    &:nth-child(1) {
+      padding-right: 2.25rem;
+    }
+
+    &:nth-child(2) {
+      padding-left: 2.25rem;
+    }
+  }
+}
+
+.disclaimer {
+  width: 60%;
+  height: 2rem;
+  text-align: center;
+  color: #ffffff00;
+
+  a {
+    color: #ffffff00;
+  }
+}
+
+.user {
+  font-size: 18px;
+  margin-right: 9px;
+  margin-top: -2px;
+}
+
+.header {
+  background-color: #007bff00; /* Цвет фона заголовка */
+  color: #fff; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  padding: 20px 0; /* Внутренние отступы сверху и снизу */
+  padding-right: 190px;
+}
+
+.header h1 {
+  font-size: 34px; /* Размер шрифта */
+  margin-left: -90px; /* Убираем внешние отступы */
+  position: absolute;
+}
+
+.StranicaGlav {
+  color: white;
+  position: absolute;
+  margin-left: -180px;
+  margin-top: 40px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.StranicaKonfig {
+  color: white;
+  margin-left: -65px;
+  margin-top: 40px;
+  position: absolute;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.aboutusssilka {
+  color: white;
+  margin-left: 94px;
+  position: absolute;
+  margin-top: 40px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.StranicaGlav:hover,
+.StranicaKonfig:hover,
+.aboutusssilka:hover {
+  color: hsl(202, 66%, 45%);
+}

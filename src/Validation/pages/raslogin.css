@@ -1,0 +1,59 @@
+.Raslogin{
+    background: linear-gradient(rgba(48, 48, 48, 0.7), rgba(0, 0, 0, 0.473)), url('../../img/blackfon.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.Raslogin-link-Link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  font-size: 30px;
+}
+
+.Raslogin-link-Link:hover{
+    text-decoration: underline;  
+}
+
+.btnraslogin {
+    width: 140px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+
+.btnraslogin:hover{
+    width: 160px;
+    padding: 8px 8px 8px;
+    font-size: 18px;
+    background-color: #cfcfcf;
+}
+
+.p{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bgrasloginblock{
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    margin-top: 300px;
+    width: 600px;
+    height: 300px;
+    padding-top: 40px;
+}

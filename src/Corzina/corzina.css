@@ -1,0 +1,189 @@
+.cart {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: "Dank Mono", ui-monospace, monospace;
+}
+
+.cart h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.divcart {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 1220px; /* Ширина карточки товара */
+  height: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.cart img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.cart h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cart p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cart button {
+  background-color: hsl(204, 90%, 37%);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart button:hover {
+  background-color: hsl(204, 71%, 29%);
+}
+
+.vernutsanaglavnuyu {
+  text-decoration: none;
+  position: absolute;
+  font-weight: 900;
+  color: #fff;
+  font-size: 45px;
+  font-family: "Exo 2", sans-serif;
+  margin-top: -65px;
+  margin-left: 1440px;
+}
+
+.vernutsanaglavnuyu:hover {
+  color: hsl(204, 71%, 60%);
+}
+
+.ochistkakorzini {
+  background-color: hsl(204, 90%, 37%);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.ochistkakorzini:hover {
+  background-color: hsl(204, 57%, 51%);
+}
+
+.obshsumm {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pricetovarcorzina {
+  font-weight: 700;
+}
+
+.blockpriceandbtn {
+  position: relative;
+  float: right;
+}
+
+.custom-alert {
+  position: fixed;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+  animation: slideIn 0.5s forwards, slideOut 0.5s 3.5s forwards;
+  font-weight: 700;
+}
+
+@keyframes slideIn {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    top: 10px;
+  }
+  to {
+    top: -50px;
+  }
+}
+
+/* Стиль для контейнера */
+.container {
+  width: 100%;
+  display: flex;
+  padding-left: 1500px;
+  margin-top: -35px;
+}
+
+/* Стиль для input */
+.container input[type="text"] {
+  padding: 12px 20px;
+  border-radius: 30px 0 0 30px;
+  border: 2px solid #4a148c; /* Темно-фиолетовый */
+  outline: none;
+  width: 250px;
+  color: #ffffff; /* Белый цвет текста */
+  background-color: #1a237e; /* Темно-синий */
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Стиль для placeholder */
+.container input[type="text"]::placeholder {
+  color: #b39ddb; /* Светло-фиолетовый */
+  opacity: 1; /* Полная непрозрачность */
+}
+
+/* Стиль для input при фокусе */
+.container input[type="text"]:focus {
+  border-color: #311b92; /* Темно-синий */
+  box-shadow: 0 0 10px rgba(74, 20, 140, 0.5); /* Темно-фиолетовая тень */
+}
+
+/* Стиль для button */
+.container button {
+  padding: 12px 20px;
+  border-radius: 0 30px 30px 0;
+  border: 2px solid #4a148c; /* Темно-фиолетовый */
+  background-color: #4a148c; /* Темно-фиолетовый */
+  color: #ffffff; /* Белый цвет текста */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Стиль для button при наведении */
+.container button:hover {
+  background-color: #311b92; /* Темно-синий */
+  transform: scale(1.05); /* Увеличение размера */
+  box-shadow: 0 0 15px rgba(49, 27, 146, 0.5); /* Темно-синяя тень */
+}
+
+/* Стиль для button при нажатии */
+.container button:active {
+  transform: scale(0.95); /* Уменьшение размера */
+}

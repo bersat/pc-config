@@ -1,0 +1,21 @@
+.alert {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4a148c; /* Темно-фиолетовый */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.alert.show {
+  top: 20px;
+}
+
+.alert.hide {
+  top: -100px;
+}
